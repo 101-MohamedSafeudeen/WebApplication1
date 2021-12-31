@@ -3,6 +3,11 @@
 *@
 @{
 }
-<h1>
-    Student ID - 101
-</h1>
+<ul>
+    @foreach (var emp in ViewData["employees"] as IList<Employee>)
+    {
+    <li>
+        @emp.ID
+    </li>
+    }
+</ul>
